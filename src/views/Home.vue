@@ -5,15 +5,15 @@
     <h1 class="custom-header">Featured Projects</h1>
     <projects id="completed-projects" 
               v-bind:projects="completedProjects"/>
-<!--     <projects id="completed-projects" 
-              v-bind:projects="completedProjects"/> -->
-
-    <h1 class="custom-header">Current Projects</h1>
+    <h1 class="custom-header">Current</h1>
     <current-projects id="current-projects"
                       v-bind:currentProjects="currentProjects"/>
-    <h1 class="custom-header">Meet the team</h1>
     <h1 class="custom-header">Schedule</h1>
+    <schedule />
+    <h1 class="custom-header">Meet the team</h1>
+    <meet-the-team />
     <h1 class="custom-header">Contact</h1>
+    <!-- <contact /> -->
   </div>
 </template>
 
@@ -23,10 +23,14 @@ import Projects from '@/components/Projects.vue'
 import Project from '@/components/Project.vue'
 import Navbar from '@/components/Navbar.vue'
 import CurrentProjects from '@/components/CurrentProjects'
+import Schedule from '@/components/Schedule.vue'
+import MeetTheTeam from '@/components/MeetTheTeam.vue'
 
 export default {
   name: 'home',
   components: {
+    MeetTheTeam,
+    Schedule,
     CurrentProjects,
     Navbar,
     LandingPage,

@@ -1,25 +1,25 @@
 <template>
   <div id="projects-container">
-    <b-container fluid>
-      <b-row>
-        <b-col sm="4">
+    <b-container fluid class="no-padding">
+      <b-row :no-gutters="true">
+        <b-col md="4">
           <project v-bind:project="projects[0]"/>
         </b-col>
-        <b-col sm="4">
+        <b-col md="4">
           <project v-bind:project="projects[1]"/>
         </b-col>
-        <b-col sm="4">
+        <b-col md="4">
           <project v-bind:project="projects[2]"/>
         </b-col>
       </b-row>
-      <b-row>
-        <b-col sm="4">
+      <b-row :no-gutters="true">
+        <b-col md="4">
           <project v-bind:project="projects[2]"/>
         </b-col>
-        <b-col sm="4">
+        <b-col md="4">
           <project v-bind:project="projects[2]"/>
         </b-col>
-        <b-col sm="4">
+        <b-col md="4">
           <project v-bind:project="projects[2]"/>
         </b-col>
       </b-row>
@@ -45,8 +45,13 @@
 </script>
 <style>
 
-#projects-container {
+#projects-container  class="no-padding"{
   background: red;
+}
+
+.no-padding {
+  padding-right: 0px !important;
+  padding-left: 0px !important;
 }
 
 #projects-grid {
