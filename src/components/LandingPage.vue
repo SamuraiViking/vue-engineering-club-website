@@ -1,8 +1,7 @@
 <template>
   <div id="landing-page">
     <div id="landing-page-content">
-      <h1>Northfield Engineers</h1>
-      <button>Hello</button>
+      <h1>Carlton & Stolaf Engineering Club</h1>
     </div>
   </div>
 </template>
@@ -24,16 +23,21 @@
 <style>
 
 #landing-page {
-  background: black;
-  height: 100%;
+  background: blue;
+  height: 70%;
   display: flex;
-  align-items: center;
   justify-content: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
 }
 
 #landing-page-content {
+  margin-top: 5%;
   padding: 20px;
-  background: blue;
+  color: black;
+  border-radius: 10px;
+  background: transparent;
 }
 
 </style>

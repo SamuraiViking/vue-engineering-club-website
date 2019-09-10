@@ -1,19 +1,59 @@
 <template>
   <div class="home">
     <landing-page />
-    <projects />
+    <h1>Featured Projects</h1>
+    <projects id="featured-projects" 
+              v-bind:projects="featuredProjects"/>
   </div>
 </template>
 
 <script>
 import LandingPage from '@/components/LandingPage.vue'
 import Projects from '@/components/Projects.vue'
+import Project from '@/components/Project.vue'
 
 export default {
   name: 'home',
   components: {
     LandingPage,
     Projects,
+    Project,
+  },
+  data() {
+    return {
+      featuredProjects: [
+        {
+          id: 1,
+          img: "img.jpg",
+          description: "a great description",
+        },
+        {
+          id: 2,
+          img: "img.jpg",
+          description: "a great description",
+        },
+        {
+          id: 3,
+          img: "img.jpg",
+          description: "a great description",
+        },
+        {
+          id: 4,
+          img: "img.jpg",
+          description: "a great description",
+        },
+        {
+          id: 5,
+          img: "img.jpg",
+          description: "a great description",
+        },
+        {
+          id: 6,
+          img: "img.jpg",
+          description: "a great description",
+        },
+      ],
+    }
   }
 }
 </script>

@@ -1,73 +1,44 @@
 <template>
   <div id="projects-container">
     <div id="projects-grid">
-        <div 
-          id="project-1"
-          class="project" 
-          @mouseover="setHoveredProject(1)" 
-          @mouseleave="setHoveredProject(null)">
-          <div 
-            v-if="hovered(1)"
-            @mouseover="hoveringContents('none')">
-            <button>More Info</button>
-            projects
-          </div>
-        </div>
-        <div id="project-2" class="project">projects</div>
-        <div id="project-3" class="project">projects</div>
-        <div id="project-4" class="project">projects</div>
-        <div id="project-5" class="project">projects</div>
-        <div id="project-6" class="project">projects</div>        
+      <project v-bind:project="projects[0]"/>
+      <project v-bind:project="projects[1]"/>
+      <project v-bind:project="projects[2]"/>
+      <project v-bind:project="projects[3]"/>
+      <project v-bind:project="projects[4]"/>
+      <project v-bind:project="projects[5]"/>
     </div>
   </div>
 </template>
 
 <script>
-  name: 'projects'
+  import Project from './Project.vue'
+
   export default {
+    props: ['projects'],
+    name: 'projects',
+    components: {
+      Project
+    },
     data() {
       return {
-        hoveredProject: '',
-        hoveredProjectContent: '',
+        hoveredProject: null,
       }
     },
-    methods: {
-      hovered(hoveredProjectId) {
-        return this.hoveredProject === hoveredProjectId
-      },
-      setHoveredProject(hoveredProjectId) {
-        this.hoveredProject = hoveredProjectId
-      },
-      resetHoveredProject() {
-        this.hoveredProject = ''
-      }
-    }
   }
 </script>
 <style>
 
-/*:root {
-  --grid-gap: 10px;
-  --bg-color: blue;
-}*/
-
 #projects-container {
-  max-width: 1000px;
-  margin: 0px auto;
-  --grid-gap: 10px;
+  background: red;
 }
 
 #projects-grid {
-  margin-top: var(--grid-gap);
+  margin: 0px auto;
+  grid-gap: 20px;
+  max-width: 800px;
   display: grid;
-  grid-gap: var(--grid-gap);
   grid-template-columns: auto auto auto;
-}
-
-.project {
-  z-index: 99;
-  padding: 50px;
-  background: black;
 }
 
 </style>
