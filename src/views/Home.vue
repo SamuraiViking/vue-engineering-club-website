@@ -2,11 +2,15 @@
   <div class="home">
     <navbar />
     <landing-page />
+    <h1 class="custom-header">Featured Projects</h1>
     <projects id="completed-projects" 
               v-bind:projects="completedProjects"/>
-    <h1 class="custom-header">Ongoing Projects</h1>
-    <projects id="ongoing-projects"
-              v-bind:projects="ongoingProjects"/>
+<!--     <projects id="completed-projects" 
+              v-bind:projects="completedProjects"/> -->
+
+    <h1 class="custom-header">Current Projects</h1>
+    <current-projects id="current-projects"
+                      v-bind:currentProjects="currentProjects"/>
     <h1 class="custom-header">Meet the team</h1>
     <h1 class="custom-header">Schedule</h1>
     <h1 class="custom-header">Contact</h1>
@@ -18,10 +22,12 @@ import LandingPage from '@/components/LandingPage.vue'
 import Projects from '@/components/Projects.vue'
 import Project from '@/components/Project.vue'
 import Navbar from '@/components/Navbar.vue'
+import CurrentProjects from '@/components/CurrentProjects'
 
 export default {
   name: 'home',
   components: {
+    CurrentProjects,
     Navbar,
     LandingPage,
     Projects,
@@ -46,7 +52,7 @@ export default {
           description: "a great description",
         },
       ],
-      ongoingProjects: [
+      currentProjects: [
         {
           id: 4,
           img: "img.jpg",

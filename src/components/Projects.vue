@@ -1,10 +1,29 @@
 <template>
   <div id="projects-container">
-    <div id="projects-grid">
-      <project v-bind:project="projects[0]"/>
-      <project v-bind:project="projects[1]"/>
-      <project v-bind:project="projects[2]"/>
-    </div>
+    <b-container fluid>
+      <b-row>
+        <b-col sm="4">
+          <project v-bind:project="projects[0]"/>
+        </b-col>
+        <b-col sm="4">
+          <project v-bind:project="projects[1]"/>
+        </b-col>
+        <b-col sm="4">
+          <project v-bind:project="projects[2]"/>
+        </b-col>
+      </b-row>
+      <b-row>
+        <b-col sm="4">
+          <project v-bind:project="projects[2]"/>
+        </b-col>
+        <b-col sm="4">
+          <project v-bind:project="projects[2]"/>
+        </b-col>
+        <b-col sm="4">
+          <project v-bind:project="projects[2]"/>
+        </b-col>
+      </b-row>
+    </b-container>
   </div>
 </template>
 

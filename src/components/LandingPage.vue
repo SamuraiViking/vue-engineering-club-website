@@ -68,7 +68,9 @@
 #landing-page {
   padding-top: 200px;
   position: relative;
-  background: black;
+  background-color: #2d3436;
+background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  /*background: black;*/
   height: 100%;
   justify-content: center;
   background-repeat: no-repeat;
