@@ -4,8 +4,12 @@
       @mouseenter="setHoveredProject">
       <div class="overlay">
         <div id="overlay-content">
-          <h2>Awesome Drone</h2>
-          <b-button variant="primary">More Info</b-button>
+          <div id="overlay-from-right">
+            <h2>Awesome Drone</h2>
+          </div>
+          <div id="overlay-from-left">
+            <b-button variant="primary">More Info</b-button>
+          </div>
         </div>
       </div>
       <img id="project-img" src="https://www.digipen.edu/sites/default/files/public/img/engineering/02-image/digipen-computer-engineering-4th-year-handheld-gaming-console-im.jpg">
@@ -50,12 +54,33 @@
   justify-content: center;
   align-items: center;
   opacity: 0;
-  transition: 0.5s ease;
+  transition: 0.8s ease;
   top: 50px;
 }
 
+#overlay-from-right {
+  position: relative;
+  right: 300px;
+  transition: 0.8s ease;
+}
+
+#overlay-from-left {
+  position: relative;
+  left: 300px;
+  transition: 0.8s ease;
+}
+
 .overlay:hover #overlay-content {
+  left: 0px;
   opacity: 1;
+}
+
+.overlay:hover #overlay-from-left {
+  left: 0px;
+}
+
+.overlay:hover #overlay-from-right {
+  right: 0px;
 }
 
 #more-info-btn {
@@ -71,7 +96,7 @@
   background-image: blue;
   width: 100%;
   height: auto;
-  transition: .3s ease;
+  transition: .8s ease;
 }
 
 .project:hover #project-img {

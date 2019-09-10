@@ -3,6 +3,13 @@
     <div id="landing-page-content">
       <h1>Carlton & Stolaf Engineering Club</h1>
     </div>
+    <div id="video-container">
+      <div id="home-page-video">
+        <iframe width="600" height="461"
+          src="https://www.youtube.com/embed/bipTWWHya8A">
+        </iframe>
+      </div>
+    </div>
   </div>
 </template>
 
@@ -22,10 +29,19 @@
 
 <style>
 
+#home-page-video {
+  /*position: absolute;*/
+  /*bottom: 0px;*/
+}
+
+#video-container {
+  display: flex;
+  justify-content: center;
+}
+
 #landing-page {
   background: blue;
-  height: 70%;
-  display: flex;
+  height: 80%;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -33,7 +49,7 @@
 }
 
 #landing-page-content {
-  margin-top: 5%;
+  position: relative;
   padding: 20px;
   color: black;
   border-radius: 10px;
