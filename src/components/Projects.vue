@@ -4,9 +4,6 @@
       <project v-bind:project="projects[0]"/>
       <project v-bind:project="projects[1]"/>
       <project v-bind:project="projects[2]"/>
-      <project v-bind:project="projects[3]"/>
-      <project v-bind:project="projects[4]"/>
-      <project v-bind:project="projects[5]"/>
     </div>
   </div>
 </template>
@@ -35,10 +32,7 @@
 
 #projects-grid {
   margin: 0px auto;
-  grid-gap: 20px;
-  max-width: 800px;
-  display: grid;
-  grid-template-columns: auto auto auto;
+  display: flex;
 }
 
 </style>

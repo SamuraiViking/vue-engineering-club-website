@@ -1,13 +1,17 @@
 <template>
   <div id="landing-page">
-    <div id="landing-page-content">
-      <h1>Carlton & Stolaf Engineering Club</h1>
-    </div>
-    <div id="video-container">
-      <div id="home-page-video">
-        <iframe width="600" height="461"
-          src="https://www.youtube.com/embed/bipTWWHya8A">
-        </iframe>
+    <div id="top-section">
+      <div id="top-section-container">
+        <h1 type="info" id="top-section-title">Stolaf & Carlton Engineering Club</h1>
+        <span >Can we build it? Yes we can!</span>
+        <div id="top-section-btns">
+          <div id="join-now-container">
+            <b-button size="lg" block variant="info">Join Now</b-button>
+          </div>
+          <div id="see-more-container">
+            <b-button size="lg" block variant="outline-info">See More</b-button>
+          </div>
+        </div>
       </div>
     </div>
   </div>
@@ -29,31 +33,47 @@
 
 <style>
 
-#home-page-video {
-  /*position: absolute;*/
-  /*bottom: 0px;*/
+#top-section-title {
+  max-width: 300px;
+  margin-bottom: 30px;
 }
 
-#video-container {
+
+#top-section-container {
+  max-width: 1000px;
+  margin: 0px auto;
+  text-align: left;
+  color: white;
+}
+
+
+#top-section {
+  padding: 0 50px;
+}
+
+#top-section-btns {
+  margin-top: 50px;
   display: flex;
-  justify-content: center;
+}
+
+#join-now-container {
+  width: 300px;
+  margin-right: 50px;
+}
+
+#see-more-container {
+  width: 200px;
 }
 
 #landing-page {
-  background: blue;
-  height: 80%;
+  padding-top: 200px;
+  position: relative;
+  background: black;
+  height: 100%;
   justify-content: center;
   background-repeat: no-repeat;
   background-size: cover;
   background-position: center;
-}
-
-#landing-page-content {
-  position: relative;
-  padding: 20px;
-  color: black;
-  border-radius: 10px;
-  background: transparent;
 }
 
 </style>

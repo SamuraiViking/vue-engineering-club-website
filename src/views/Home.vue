@@ -1,9 +1,15 @@
 <template>
   <div class="home">
+    <navbar />
     <landing-page />
-    <h1>Featured Projects</h1>
-    <projects id="featured-projects" 
-              v-bind:projects="featuredProjects"/>
+    <projects id="completed-projects" 
+              v-bind:projects="completedProjects"/>
+    <h1 class="custom-header">Ongoing Projects</h1>
+    <projects id="ongoing-projects"
+              v-bind:projects="ongoingProjects"/>
+    <h1 class="custom-header">Meet the team</h1>
+    <h1 class="custom-header">Schedule</h1>
+    <h1 class="custom-header">Contact</h1>
   </div>
 </template>
 
@@ -11,17 +17,19 @@
 import LandingPage from '@/components/LandingPage.vue'
 import Projects from '@/components/Projects.vue'
 import Project from '@/components/Project.vue'
+import Navbar from '@/components/Navbar.vue'
 
 export default {
   name: 'home',
   components: {
+    Navbar,
     LandingPage,
     Projects,
     Project,
   },
   data() {
     return {
-      featuredProjects: [
+      completedProjects: [
         {
           id: 1,
           img: "img.jpg",
@@ -37,6 +45,8 @@ export default {
           img: "img.jpg",
           description: "a great description",
         },
+      ],
+      ongoingProjects: [
         {
           id: 4,
           img: "img.jpg",
@@ -52,13 +62,20 @@ export default {
           img: "img.jpg",
           description: "a great description",
         },
-      ],
+      ]
     }
   }
 }
 </script>
 
 <style>
+
+.custom-header {
+  background: black;
+  color: #BEBEBE;
+  margin: 0px;
+  padding: 20px 0px;
+}
 
 .home {
   margin: 0px auto;
