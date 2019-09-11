@@ -1,8 +1,5 @@
 <template>
   <div class="home">
-<!--     <font-awesome-icon :icon="['fas', 'user-secret']" />
-    <font-awesome-icon :icon="['fab', 'font-awesome']" /> -->
-    <i class="fas fa-user-secret"></i>
     <navbar />
     <landing-page />
     <h1 id="projects" class="custom-header">Projects</h1>
@@ -11,9 +8,9 @@
 <!--     <h1 class="custom-header">Current</h1>
     <current-projects id="current-projects"
                       v-bind:currentProjects="currentProjects"/> -->
+    <!-- <h1 class="custom-header">About</h1> -->
     <h1 class="custom-header">The Team</h1>
     <meet-the-team />
-    <h1 class="custom-header">Schedule</h1>
     <!-- <schedule /> -->
     <h1 class="custom-header">Contact</h1>
     <!-- <contact /> -->
@@ -85,6 +82,8 @@ export default {
 
 .custom-header {
   background: black;
+  background-color: #000000;
+  background-image: linear-gradient(315deg, #000000 0%, #414141 74%);
   color: #BEBEBE;
   margin: 0px;
   padding: 20px 0px;

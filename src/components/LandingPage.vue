@@ -9,8 +9,8 @@
             <b-button size="lg" block variant="primary">Join Now</b-button>
           </div>
           <div id="see-more-container">
-            <b-button size="lg" block variant="outline-primary">
-              <a href="#projects">See More</a>
+            <b-button class="see-more-btn" size="lg" block variant="outline-primary" >
+              <a href="#projects" v-smooth-scroll>See More</a>
             </b-button>
           </div>
         </div>
@@ -34,6 +34,11 @@
 </script>
 
 <style>
+
+.see-more-btn:hover a {
+  color: white;
+  text-decoration: none;
+}
 
 #top-section-title {
   max-width: 300px;

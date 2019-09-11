@@ -3,9 +3,11 @@
     <div id="scroll-area-content" v-for="person in people">
       <b-card
         :title="person.name"
+        @mouseover="test()"
+        class="my-b-card"
         img-src="https://prd-wret.s3-us-west-2.amazonaws.com/assets/palladium/production/s3fs-public/styles/full_width/public/thumbnails/image/placeholder-profile_3.png"
         img-top
-        style="min-width: 15rem;"
+        style="min-width: 14rem;"
       >
         <b-card-text>
           <div style="text-align: left;">
@@ -46,12 +48,27 @@
           { name: 'Isabelle', description: 'A great description' },
         ]
       }
+    },
+    methods: {
+      test() {
+        console.log('woring');
+      }
     }
   }
 </script>
 
 
 <style>
+
+.my-b-card {
+  transition: ease 0.3s;
+  padding: 5px;
+  border-color: transparent !important;
+}
+
+.my-b-card:hover {
+  padding: 0px;
+}
 
 .main {
     overflow-y: auto;
