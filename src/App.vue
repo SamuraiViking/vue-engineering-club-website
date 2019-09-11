@@ -1,6 +1,7 @@
 <template>
   <div id="app">
     <router-view/>
+    <!-- <script src="https://kit.fontawesome.com/319f524ab3.js"></script> -->
   </div>
 </template>
 

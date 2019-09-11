@@ -9,7 +9,9 @@
             <b-button size="lg" block variant="primary">Join Now</b-button>
           </div>
           <div id="see-more-container">
-            <b-button size="lg" block variant="outline-primary">See More</b-button>
+            <b-button size="lg" block variant="outline-primary">
+              <a href="#projects">See More</a>
+            </b-button>
           </div>
         </div>
       </div>

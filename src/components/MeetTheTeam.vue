@@ -8,7 +8,12 @@
         style="min-width: 15rem;"
       >
         <b-card-text>
-          {{ person.description }}
+          <div style="text-align: left;">
+            <p> Senior </p>
+            <p> Stolaf </p>
+            <p> Math Majior </p>
+            <p> "I like cheese"</p>
+          </div>
         </b-card-text>
       </b-card>
     </div>

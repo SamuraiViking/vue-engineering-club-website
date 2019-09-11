@@ -14,9 +14,9 @@
         </b-navbar-nav>
 
         <b-navbar-nav class="ml-auto">
-          <b-nav-item href="#">Github</b-nav-item>
-          <b-nav-item href="#">Instagram</b-nav-item>
           <b-nav-item href="#">Facebook</b-nav-item>
+          <b-nav-item href="#">Instagram</b-nav-item>
+          <b-nav-item href="#">Github</b-nav-item>
           <b-nav-item href="#">Snapchat</b-nav-item>
           <b-nav-item href="#">Youtube</b-nav-item>
         </b-navbar-nav>

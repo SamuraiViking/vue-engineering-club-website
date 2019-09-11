@@ -1,8 +1,11 @@
 <template>
   <div class="home">
+<!--     <font-awesome-icon :icon="['fas', 'user-secret']" />
+    <font-awesome-icon :icon="['fab', 'font-awesome']" /> -->
+    <i class="fas fa-user-secret"></i>
     <navbar />
     <landing-page />
-    <h1 class="custom-header">Projects</h1>
+    <h1 id="projects" class="custom-header">Projects</h1>
     <projects id="completed-projects" 
               v-bind:projects="completedProjects"/>
 <!--     <h1 class="custom-header">Current</h1>

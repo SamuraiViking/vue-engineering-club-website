@@ -4,6 +4,18 @@ import router from './router'
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
 import BootstrapVue from 'bootstrap-vue'
+import { library } from '@fortawesome/fontawesome-svg-core'
+import { faUserSecret } from '@fortawesome/free-solid-svg-icons'
+import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
+import { dom } from '@fortawesome/fontawesome-svg-core'
+import { faFontAwesome } from '@fortawesome/free-brands-svg-icons'
+
+
+library.add(faUserSecret)
+library.add(faFontAwesome)
+dom.watch()
+Vue.component('font-awesome-icon', FontAwesomeIcon)
+
 
 Vue.use(BootstrapVue)
 Vue.config.productionTip = false
