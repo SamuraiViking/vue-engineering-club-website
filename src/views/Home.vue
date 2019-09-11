@@ -2,16 +2,16 @@
   <div class="home">
     <navbar />
     <landing-page />
-    <h1 class="custom-header">Featured Projects</h1>
+    <h1 class="custom-header">Projects</h1>
     <projects id="completed-projects" 
               v-bind:projects="completedProjects"/>
-    <h1 class="custom-header">Current</h1>
+<!--     <h1 class="custom-header">Current</h1>
     <current-projects id="current-projects"
-                      v-bind:currentProjects="currentProjects"/>
-    <h1 class="custom-header">Schedule</h1>
-    <schedule />
-    <h1 class="custom-header">Meet the team</h1>
+                      v-bind:currentProjects="currentProjects"/> -->
+    <h1 class="custom-header">The Team</h1>
     <meet-the-team />
+    <h1 class="custom-header">Schedule</h1>
+    <!-- <schedule /> -->
     <h1 class="custom-header">Contact</h1>
     <!-- <contact /> -->
   </div>

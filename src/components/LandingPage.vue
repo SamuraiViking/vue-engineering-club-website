@@ -6,10 +6,10 @@
         <span >Can we build it? Yes we can!</span>
         <div id="top-section-btns">
           <div id="join-now-container">
-            <b-button size="lg" block variant="info">Join Now</b-button>
+            <b-button size="lg" block variant="primary">Join Now</b-button>
           </div>
           <div id="see-more-container">
-            <b-button size="lg" block variant="outline-info">See More</b-button>
+            <b-button size="lg" block variant="outline-primary">See More</b-button>
           </div>
         </div>
       </div>
@@ -70,6 +70,7 @@
   position: relative;
   background-color: #2d3436;
   background-image: linear-gradient(315deg, #2d3436 0%, #000000 74%);
+  background-image: url(https://wallpaperplay.com/walls/full/f/f/5/177539.jpg);
   height: 100%;
   justify-content: center;
   background-repeat: no-repeat;
